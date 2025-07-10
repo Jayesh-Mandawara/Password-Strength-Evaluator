@@ -427,7 +427,7 @@
           completedRequirements.push("Excellent length (16+ chars)");
         }
 
-        // DSA Bonus: Balanced brackets
+        // DSA: Balanced brackets
         if (/[()\[\]{}]/.test(password)) {
           if (isBalancedBrackets(password)) {
             score += 5;
@@ -438,7 +438,7 @@
           }
         }
 
-        // DSA Bonus: Repeated substrings
+        // DSA: Repeated substrings
         if (hasRepeatedSubstrings(password)) {
           score -= 10;
           feedback.push("Avoid repeated patterns/substrings");
